@@ -1,0 +1,112 @@
+body{
+  background-color: #C4EBF9;
+  color: white;
+}
+
+.grid-header {
+  margin-bottom: 5%;
+  display: grid;
+  grid-template-columns: 100% 100% 100%;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    " header "
+}
+
+.header {
+grid-area: header;
+background-color: #02BFB1;
+padding: 10px;
+text-align: center;
+font-family: arial;
+}
+
+.grid-main {
+height: 400px;
+margin-bottom: 5%;
+display: grid;
+grid-template-columns: 30% 5% 65%;
+grid-template-rows: auto;
+grid-template-areas: 
+  "aside . article"
+}
+
+.aside {
+  background-color: #6FDC6E;
+  grid-area: aside;
+  padding: 20px;
+  text-align: center;
+  font-family: arial;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.article {
+  grid-area: article;
+  background-color: #FAB14C;
+  padding: 20px;
+  text-align: center;
+  font-family: arial;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+
+.footer{
+grid-area:footer;
+background-color: #02BFB1;
+padding: 20px;
+text-align: center;
+font-family: arial;
+}
+
+body {
+  margin: 100px auto;
+}
+
+
+.child {
+  border-radius: 10%;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+}
+
+.one {
+  background-color: red;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.two {
+  background-color: royalblue;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+}
+
+.three {
+  background-color: sienna;
+  text-align: center; 
+  display: inline-block;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 35%;
+}
+
+.slider .text {
+  top: 25%;
+  left: 35%;
+}
